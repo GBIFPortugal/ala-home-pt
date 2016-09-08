@@ -1,0 +1,234 @@
+body{
+	background:#CCC;
+	margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+}
+
+header{
+    background: #FFFFFF url('../images/headbackground101.jpg') no-repeat right top;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    height: 140px;
+}
+
+nav{
+/*    height: 39px;*/
+    margin-top: -11px;
+    background-color: #999B9E;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+nav ul {
+    padding-left: 0px;
+} 
+
+nav > ul > li {
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 13px;
+	text-align: center;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    text-decoration: none;
+    padding-top: 12px;
+
+}
+
+nav ul li a:hover{
+    color: #FFFFFF;
+    font-weight: bold;
+    background: rgb(2,162,46);
+/*    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;*/
+    font-size: 100%;
+    text-decoration: none;
+}
+
+
+
+h2{
+	color: #666666;
+	background: #00b7ea;
+}
+
+section{
+/*	width:30%;
+	margin-right: 2%;
+	display:inline-block;
+	float:left;*/
+}
+
+summary{
+	font-style:normal;
+}
+
+details{
+	font-style: italic;
+}
+
+footer{
+	background: #00b7ea;
+	clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    /*border-top: 1px solid #CCC;*/
+    font-size: 12px;
+    background: #434343;
+    color: white;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+
+}
+footer a{
+    color: #08C;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #005580;
+    text-decoration: underline;
+}
+
+#site-slogan {
+	margin-left: 100px;
+    margin-top: -65px;
+    position:absolute;
+    color:#CCC;
+    font-size: 100%;
+}
+
+
+#site-name {
+    margin-left: 100px;
+    margin-top: -45px;
+    position:absolute;
+    color:#CCC;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 100%;
+/*    color: #575;*/
+}
+
+#site-name a:link{
+    color: #CCC;
+    text-decoration: none;
+}
+
+#site-name a:visited{
+    color: #CCC;
+    text-decoration: none;
+}
+
+#site-name a:hover{
+    color: #575;
+    text-decoration: underline;
+}
+
+.active{
+    background-color: rgb(2,162,46)
+
+}
+
+.partners{
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: gray;
+
+}
+
+.span3{
+    width: 22%;
+    display: inline-block;
+    padding-left: 30px;
+}
+.span3 img{
+    height: 50px;
+}
+
+#nomeALP{
+    display: inline-block;
+    font-variant: small-caps;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    float: left;
+    position: relative;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menuALP{
+    display: inline-block;
+    float: right;
+    font-variant: small-caps;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    color: #FFFFFF;
+}
+
+.menuALP a:focus{
+    background: white;
+}
+
+
+main > nav > ul > li > a{
+    clear: both;
+    height: 0px;
+    width: 125px;
+    padding-right: 0px;
+    padding-top: 0px;
+    font-weight: normal;
+}
+
+main > nav > ul > li > a:hover{
+    font-weight: normal;
+    color: green;
+    text-decoration: underline;
+}
+
+
+main{
+    background: #FFFFFF;
+    margin-top: 5px;
+}
+main nav{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    margin-top: 0px;
+    height: 39px;
+    width: 100%;
+    float: right;
+    position: relative;
+    top: -545px;
+    opacity: 0.5;
+}
+
+main nav li{
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+
+.rolerimage{
+    width: 70%;
+}
+
+
+/*#site-name a:hover{
+    color: #575;
+}*/
+
+
+
