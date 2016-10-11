@@ -214,6 +214,14 @@ hr {
     top: -45px;
 }
 
+.btn .btn-link .btn-sm a{
+    color: #007d24;
+}
+
+.btn .btn-link .btn-sm a:hover{
+    color: #005418;
+}
+
 /*Secção funcionalidades do site*/
 
 
@@ -266,12 +274,12 @@ hr {
 
 .section2 li a{
 	font-size: 100%;
-	color: #337AB7;
+	color: #007d24;
 }
 
 .section2 li a:hover{
 	font-size: 100%;
-	color: #23527c;
+	color: #005418;
 	text-decoration: none;
 }
 
@@ -318,12 +326,12 @@ hr {
 }
 
 .section3 a{
-	color: #58B2FF;
+	color: #19C02D;
 	list-style: none;
 }
 
 .section3 a:hover{
-	color: #3377B4;
+	color: #139823;
 	text-decoration: none;
 }
 
@@ -376,12 +384,19 @@ hr {
     }
     .itemTitle a{
     	font-weight:bold; 
-    	color:#337AB7 !important; 
+    	color:#007d24 !important;
     	text-decoration:none 
     }
     .itemTitle a:hover{ 
     	text-decoration:none;
-    	color: #23527C !important;
+    	color: #005418 !important;
+    }
+
+    .itemContent a{
+        color:#007d24 !important;
+    }
+    .itemContect a:hover{
+        color: #005418 !important;
     }
     .itemDate{
     	font-size:11px;
