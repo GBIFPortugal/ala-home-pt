@@ -58,16 +58,16 @@
   <nav class="navbar navbar-ala">
   <div class="container-fluid">
     <div class="navbar-header">
-      <h1 class="slogan"><a class="navbar-brand" href="#">Portal de Dados de Biodiversidade de Portugal</a></h1>
+      <h1 class="slogan"><a class="navbar-brand" href="http://dados.gbif.pt">Portal de Dados de Biodiversidade de Portugal</a></h1>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right navbar1">
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/generic-hub">Ocorrências</a></li>
+        <li><a href="http://dados.gbif.pt/index.html">Início</a></li>
+        <li><a href="http://dados.gbif.pt/generic-hub">Ocorrências</a></li>
         <!-- <li><a href="/species.html">Dados por espécie</a></li> -->
-        <li><a href="/generic-hub/explore/your-area?default=true">Locais</a></li>
-        <li><a href="/collectory/datasets">Conjuntos de dados</a></li>
-        <li><a href="/collectory">Publicadores</a></li>
+        <li><a href="http://dados.gbif.pt/generic-hub/explore/your-area?default=true">Locais</a></li>
+        <li><a href="http://metadados.dados.gbif.pt/collectory/datasets">Conjuntos de dados</a></li>
+        <li><a href="http://metadados.gbif.pt/collectory">Publicadores</a></li>
       </ul>
     </div>
   </div>
@@ -120,16 +120,18 @@
         <div class="item">
         <img src="images/biodiv/musgo.jpg" alt="Musgo">
           <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="http://dados.gbif.pt/collectory">Publicadores</a></h3>
+            <h3 class="fontCarouselH3"><a href="http://metadados.gbif.pt/collectory">Publicadores</a></h3>
             <p class="fontCarouselP">Consulte os publicadores de dados de Portugal através do GBIF.</p>
           </div>
         </div>
       </div>
       <div class="main-search-container">
-      <form class="main-search" role="search" action="/generic-hub/occurrences/search?taxa=#tab_mapView" method="get">
+      <form class="main-search" role="search" action="http://dados.gbif.pt/generic-hub/occurrences/search" method="get">
       <div class="form-group">
         <span style="position: relative; display: inline-block;" class="twitter-typeahead"><input dir="ltr" tabindex="-1" spellcheck="false" readonly="" 
-          style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="autocomplete form-control ac_input tt-hint" title="Search" autocomplete="off" type="text"><input style="position: relative; vertical-align: top; background-color: transparent;" dir="auto" spellcheck="false" id="main-search" class="autocomplete form-control ac_input tt-input" title="Search" name="q" placeholder="Pesquise por espécie, local, coletor ou observador" autocomplete="off" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><div style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;" class="tt-menu"><div class="tt-dataset tt-dataset-atlas-species"></div></div></span>
+          style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="autocomplete form-control ac_input tt-hint" title="Search" autocomplete="off" type="text"><input style="position: relative; vertical-align: top; background-color: transparent;" dir="auto" spellcheck="false" id="main-search" class="autocomplete form-control ac_input tt-input" title="Search" name="q" placeholder="Pesquise por espécie, local, coletor ou observador" autocomplete="off" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><div style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;" class="tt-menu">
+            <div class="tt-dataset tt-dataset-atlas-species"></div>
+        </div></span>
                         <button type="submit" class="btn btn-link btn-sm">
           <span class="glyphicon glyphicon-search"></span> Pesquisar 
         </button>
@@ -154,9 +156,9 @@
     window.onload = totalRecordsPT();
     window.onload = totalDatasetsPT();</script>
     <div class="countRecords">
-      <span id="totalRecords"></span> Ocorrências de Biodiversidade em Portugal.<br><hr>
-      <span id="totalRecordsPT"></span> Ocorrências publicadas por Portugal.<br><hr>
-      <span id ="totalDatasetsPT"></span> Conjuntos de Dados publicados por Portugal.
+      <span id="totalRecords"></span> ocorrências de Biodiversidade em Portugal<br><hr>
+      <span id="totalRecordsPT"></span> ocorrências publicadas por Portugal<br><hr>
+      <span id ="totalDatasetsPT"></span> conjuntos de dados publicados por Portugal
     </div>
 </div>
 
@@ -164,8 +166,8 @@
   <div class="container-fluid">
     <section  class="section2">
       <div class="section2-img" style="background-image:url('images/biodiv/borboleta.jpg');"></div>
-      <h2 class="section2H">Dados de Ocorrência</h2> 
-      <p>Pesquise a ocorrência de espécies, por nome científico, local ou colector/observador. Pode fazer uma pesquisa simples, ou filtrar resultados através da pesquisa avançada.</p>
+      <h2 class="section2H">Dados de ocorrência</h2>
+      <p>Pesquise a ocorrência de espécies, por nome científico, local ou coletor/observador. Pode fazer uma pesquisa simples, ou filtrar resultados através da pesquisa avançada.</p>
       <ul>
         <li><a href="/generic-hub/search#tab_simpleSearch"><span class="glyphicon glyphicon-search"></span> Pesquisa simples</a></li>
         <li><a href="/generic-hub/search#tab_advanceSearch"><span class="glyphicon glyphicon-search"></span> Pesquise avançada</a></li>
@@ -185,7 +187,7 @@
         <h2 class="section2H">Publicadores </h2>
         <p>Saiba mais sobre as instituições ou organizações nacionais que publicam dados de biodiversdidade através do GBIF. Pode consultar também os registos que estas publicam.</p>
       <ul>
-        <li><a href="/collectory/"><span class="glyphicon glyphicon-search"></span> Consulte instituições</a></li>
+        <li><a href="http://metadados.gbif.pt/collectory/"><span class="glyphicon glyphicon-search"></span> Consulte instituições</a></li>
       </ul>
     </section>
     <section class="section2">
@@ -193,7 +195,7 @@
         <h2 class="section2H">Conjuntos de dados </h2>
         <p>Explore os conjuntos de dados publicados or instituições nacionais, baseados quer em colecções biológicas, quer em bases de dados de biodiversidade. </p>
         <ul>
-          <li><a href="/collectory/datasets"><span class="glyphicon glyphicon-search"></span> Veja conjuntos de dados</a></li>
+          <li><a href="http://metadados.gbif.pt/collectory/datasets"><span class="glyphicon glyphicon-search"></span> Veja conjuntos de dados</a></li>
       </ul>
     </section>
   </div>
@@ -303,7 +305,7 @@
 </div>
 
 
-</div>
+<!--</div>-->
 
   <section class="partners">
     <div class="container-fluid">
@@ -327,7 +329,7 @@
           <a href="https://www.gbif.pt/ " target="_blank"><img src="/images/GBIFPORTUGAL.png" alt="GBIF Portugal" title="GBIF Portugal"/></a>
       </div>
     </div>
-      </section>
+  </section>
       <div class="credits">Créditos:<br>
         Fotografias: <a href="https://www.flickr.com/photos/83637132@N02">César Garcia</a>.
         Esta página usa a biblioteca css <a href="http://getbootstrap.com">Bootstrap 3</a>, incluindo icons <a href="http://glyphicons.com/">Glyphicons</a> e fontes <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>.
