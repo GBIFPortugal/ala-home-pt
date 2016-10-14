@@ -72,159 +72,53 @@
     </div>
   </div>
 </nav>
-<div class="container container-carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-        <img src="images/biodiv/borboleta.jpg" alt="Borboleta">
-          <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="http://dados.gbif.pt/generic-hub">Ocorrências</a></h3>
-            <p class="fontCarouselP">Consulte dados primários de ocorrência.</p>
-          </div>
-        </div>
-
-        <div class="item">
-        <img src="images/biodiv/guardarios.jpg" alt="Guarda rios">
-          <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="#">Dados para espécies</a></h3>
-            <p class="fontCarouselP">Consulte dados para espécies notáveis.</p>
-          </div>
-        </div>
-
-        <div class="item">
-        <img src="images/biodiv/paisagem.jpg" alt="Paisagem">
-          <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="http://dados.gbif.pt/generic-hub/explore/your-area?default=true">Locais</a></h3>
-            <p class="fontCarouselP">Veja os dados para a sua região.</p>
-          </div>
-        </div>
-
-        <div class="item">
-        <img src="images/biodiv/ra.jpg" alt="Rã">
-          <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="http://metadados.gbif.pt/collectory/datasets">Conjuntos de dados</a></h3>
-            <p class="fontCarouselP">Consulte os conjuntos de dados disponívels.</p>
-          </div>
-        </div>
-
-        <div class="item">
-        <img src="images/biodiv/musgo.jpg" alt="Musgo">
-          <div class="carousel-caption">
-            <h3 class="fontCarouselH3"><a href="http://metadados.gbif.pt/collectory">Publicadores</a></h3>
-            <p class="fontCarouselP">Consulte os publicadores de dados de Portugal através do GBIF.</p>
-          </div>
-        </div>
-      </div>
-      <div class="main-search-container">
-      <form class="main-search" role="search" action="/generic-hub/occurrences/search" method="get">
-      <div class="form-group">
-        <span style="position: relative; display: inline-block;" class="twitter-typeahead"><input dir="ltr" tabindex="-1" spellcheck="false" readonly="" 
-          style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(255, 255, 255) none repeat scroll 0% 0%;" class="autocomplete form-control ac_input tt-hint" title="Search" autocomplete="off" type="text"><input style="position: relative; vertical-align: top; background-color: transparent;" dir="auto" spellcheck="false" id="main-search" class="autocomplete form-control ac_input tt-input" title="Search" name="q" placeholder="Pesquise por espécie, local, coletor ou observador" autocomplete="off" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><div style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;" class="tt-menu">
-            <div class="tt-dataset tt-dataset-atlas-species"></div>
-        </div></span>
-                        <button type="submit" class="btn btn-link btn-sm">
-          <span class="glyphicon glyphicon-search"></span> Pesquisar 
-        </button>
-      </div>
-
-      </form>
-    </div>
-
-      <!-- Left and right controls -->
-<!--       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
-    </div>
-
-   <script>
-    window.onload = totalRecords();
-    window.onload = totalRecordsPT();
-    window.onload = totalDatasetsPT();</script>
-    <div class="countRecords">
-      <span id="totalRecords"></span> ocorrências de Biodiversidade em Portugal<br><hr>
-      <span id="totalRecordsPT"></span> ocorrências publicadas por Portugal<br><hr>
-      <span id ="totalDatasetsPT"></span> conjuntos de dados publicados por Portugal
-    </div>
-</div>
-
-  <section class="topicos">
-  <div class="container-fluid">
-    <section  class="section2">
-      <div class="section2-img" style="background-image:url('images/biodiv/borboleta.jpg');"></div>
-      <h2 class="section2H">Dados de ocorrência</h2>
-      <p>Pesquise a ocorrência de espécies, por nome científico, local ou coletor/observador. Pode fazer uma pesquisa simples, ou filtrar resultados através da pesquisa avançada.</p>
-      <ul>
-        <li><a href="/generic-hub/search#tab_simpleSearch"><span class="glyphicon glyphicon-search"></span> Pesquisa simples</a></li>
-        <li><a href="/generic-hub/search#tab_advanceSearch"><span class="glyphicon glyphicon-search"></span> Pesquise avançada</a></li>
-      </ul>
-    </section> 
-    <section class="section2">
-      <div class="section2-img" style="background-image:url('images/biodiv/paisagem_900.jpg');"></div>
-      <h2 class="section2H">Pesquisa espacial</h2>
-      <p>Obtenha registos de ocorrência de espécies procurando por uma área ou por um local.</p>
-      <ul>
-        <li><a href="/generic-hub/search#tab_spatialSearch"><span class="glyphicon glyphicon-search"></span> Pesquise por área</a></li>
-        <li><a href="/generic-hub/explore/your-area?default=true"><span class="glyphicon glyphicon-search"></span> Pesquise por local</a></li>
-      </ul>
-    </section>
-    <section class="section2">
-      <div class="section2-img" style="background-image:url('images/biodiv/ave_900.jpg');"></div>
-        <h2 class="section2H">Publicadores </h2>
-        <p>Saiba mais sobre as instituições ou organizações nacionais que publicam dados de biodiversdidade através do GBIF. Pode consultar também os registos que estas publicam.</p>
-      <ul>
-        <li><a href="http://metadados.gbif.pt/collectory/"><span class="glyphicon glyphicon-search"></span> Consulte instituições</a></li>
-      </ul>
-    </section>
-    <section class="section2">
-      <div class="section2-img" style="background-image:url('images/biodiv/liquenes_900.jpg');"></div>
-        <h2 class="section2H">Conjuntos de dados </h2>
-        <p>Explore os conjuntos de dados publicados or instituições nacionais, baseados quer em colecções biológicas, quer em bases de dados de biodiversidade. </p>
+<section class="section2" style="margin: 0px; width: 100%; background:#FFFFFF;">
+  <h1>Sobre o Portal de Dados de Biodiversidade de Portugal</h1>
+  <h2>O que é?</h2>
+  <p>O Portal de Dados de Biodiversidade de Portugal é a implementação nacional da plataforma Atlas of Living Australia,
+      desenvolvida pela infraestrutura de investigação com o mesmo nome, que é o nó Australiano do GBIF. A adaptação
+  para ser utilizado no contexto nacional resultou do trabalho de uma comunidade de programadores, principalmente
+      associados aos Nós GBIF, com a orientação do Atlas of Living Australia, e apoiados pelo Secretariado do GBIF.</p>
+    <h2>Porquê a implementação deste portal?</h2>
+    <p>A análise de um grande volume de dados através de uma aplicação web coloca grandes desafios em termos da
+        infraestrutura de suporte, de modo a garantir a fiabilidade e rapidez no acesso e visualização da informação.
+        Por outro lado, as necessidades de vizualização e análise a informação variam conforme o contexto geográfico,
+        político e ecológico de cada região. Por essas razões, é difícil implementar num portal glogal como e o
+        GBIF.org, as ferramentas necessárias para as respostas às necessidades específicas de cada país ou região
+    </p>
+    <p>Ao nível nacional, essa implementação é possível, permitindo que as ferramentas para análise da informação
+        sejam mais finas. Assim, o utilizador pode fazer a verificação imediata da disponibilidade e adequabilidade da
+        informação fornecida sem ter necessidade de descarregar os dados e analisá-los localmente.</p>
+    <h2>O que irá ser disponibilizado neste portal?</h2>
+    <p>Neste porta disponibilizam-se os dados publicados através do GBIF, com as seguntes fontes:
+        <ul">
+            <li>Dados publicados por instituições portuguesas</li>
+            <li>Dados publicados por instituições estrangeiras para ao território nacional</li>
+        </ul>
+    </p>
+    <p>Os dados que serão dispobilizados neste portal, para consulta, análise e descarregamento serão, na medida do
+        possível, iguais aos que são disponibilizados no portal global, GBIF.org. As diferenças que poderão existir
+        resultarão de dois fatores:
         <ul>
-          <li><a href="http://metadados.gbif.pt/collectory/datasets"><span class="glyphicon glyphicon-search"></span> Veja conjuntos de dados</a></li>
-      </ul>
-    </section>
-  </div>
-  </section>
+            <li>Os dados do portal internacional foram atualizados, e ainda não foi possível reproduzir essa
+                atualização no portal nacional</li>
+            <li>Os dados foram processados pelo portal nacional, para fins de indexação, alterando dessa forma
+                os dados</li>
+        </ul>
+    </p>
+    <p>Os dados são, por essa razão, obtidos a partir do portal internacional GBIF.org, e nessa medida, apenas os
+        dados publicados globalmente através do GBIF estarão disponíveis neste portal nacional
+    </p>
+    <h2>Como posso publicar os dados da minha instituição através deste portal</h2>
+    <p>Neste portal são disponibilizados os dados mesmos dados (incluindo a versão) que estão disponíveos </p>
+    <h2>Como posso colaborar com o portal</h2>
+</section>
 
-  <section class="publicar">
-  <div class="container-fluid">
-    <section  class="section3">
-      <div class="section3-img" style="background-image:url('images/biodiv/coruja.jpg');">
-      <h2 class="section3H">Publicar dados de biodiversidade</h2> 
-      <p>O GBIF promove e facilita a publicação de dados de biodiversidade por instituições nacionais. É possível publicar dados de ocorrência, de amostragens ou checklists, utilizando os padrões de dados de software promovido pelo GBIF. <br>O Nó Português do GBIF disponibiliza apoio, formação e infraestrutura para uso destas ferramentas.<br><br><a href="http://www.gbif.pt/taxonomy/term/29"><span class="glyphicon glyphicon-link"></span> Saiba mais</a>
-      </p>
-      </div>
-    </section> 
-    <section class="section3">
-      <div class="section3-img" style="background-image:url('images/biodiv/paisagem_900.jpg');">
-      <h2 class="section3H">Usar dados de biodiversidade</h2>
-      <p>Veja exemplos de utiização dos dados publicados através do GBIF. Pode também reutilizar os dados num portal ou aplicação, utilizando web services do portal do GBIF e, no futuro, deste portal.
-      <br><br><a href="http://www.gbif.org/using-data/summary"><span class="glyphicon glyphicon-link"></span> Ver exemplos de uso</a>
-      <br><a href="http://www.gbif.org/developer/summary"><span class="glyphicon glyphicon-link"></span> Usar dados em aplicações</a></p>
-    </div>
-    </section>  
-  </div>
-  </section>
+
+
+
   
-  <section class="rssfeed">
-    <h2>Notícias do Nó Português do GBIF<span><a href="http://www.gbif.pt/taxonomy/term/28/feed"><img src="images/rss-feed.gif" alt="rss"></a></span></h2>
-     <div id="divRss"></div>
-  </section>
+
 
 
 <!-- Other data portals -->
