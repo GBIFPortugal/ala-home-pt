@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/about_alapt.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -68,57 +69,135 @@
         <li><a href="http://dados.gbif.pt/generic-hub/explore/your-area?default=true">Locais</a></li>
         <li><a href="http://metadados.gbif.pt/collectory/datasets">Conjuntos de dados</a></li>
         <li><a href="http://metadados.gbif.pt/collectory">Publicadores</a></li>
+        <li><a href="http://dados.gbif.pt/about.html">Sobre o portal</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<section class="section2" style="margin: 0px; width: 100%; background:#FFFFFF;">
-  <h1>Sobre o Portal de Dados de Biodiversidade de Portugal</h1>
-  <h2>O que é?</h2>
-  <p>O Portal de Dados de Biodiversidade de Portugal é a implementação nacional da plataforma Atlas of Living Australia,
-      desenvolvida pela infraestrutura de investigação com o mesmo nome, que é o nó Australiano do GBIF. A adaptação
-  para ser utilizado no contexto nacional resultou do trabalho de uma comunidade de programadores, principalmente
-      associados aos Nós GBIF, com a orientação do Atlas of Living Australia, e apoiados pelo Secretariado do GBIF.</p>
-    <h2>Porquê a implementação deste portal?</h2>
+
+<section class="section_about">
+    <h1>Sobre o Portal de Dados de Biodiversidade de Portugal</h1>
+  <ul>
+    <li><a href="#o_que">O que é?</a></li>
+    <li><a href="#porque">Porquê a implementação deste portal?</a></li>
+    <li><a href="#disponibilizado">O que é disponibilizado neste portal?</a></li>
+    <li><a href="#termos">Quais os termos de uso e licença da informação disponibilizada?</a></li>
+    <li><a href="#como_publicar">Como posso publicar os dados da minha instituição através deste portal?</a></li>
+    <li><a href="#como_colaborar">Como posso colaborar com o portal?</a></li>
+    <li><a href="#infraestrutura">Como foi construído este portal?</a></li>
+    <li><a href="#feedback">Como posso dar feedback?</a></li>
+  </ul>
+  <br>
+
+    <h2 id="o_que">O que é?</h2>
+    <p>O Portal de Dados de Biodiversidade de Portugal é o sítio para acesso da informação de âmbito nacional publicada
+          através do GBIF. Aqui é possível aceder aos dados de ocorrência de
+          biodiversidade publicados por instituições portuguesas através do <a href="http://www.gbif.org">GBIF</a>, e aos
+          dados publicados por instituições
+          estrangeiras para o território nacional. Este sítio corresponde à implementação nacional da plataforma <a
+                  href="http://www.ala.org.au">Atlas of
+            Living Australia</a>, desenvolvida pela infraestrutura de investigação com o mesmo nome, que é também o Nó Australiano
+          do GBIF. A adaptação para ser utilizado no contexto nacional resultou do trabalho de uma comunidade de programadores, principalmente
+          associados aos Nós GBIF, com a orientação do Atlas of Living Australia, e apoiados pelo Secretariado do GBIF.
+          <a href="https://github.com/AtlasOfLivingAustralia/documentation">Para saber mais sobre a adaptação do portal</a></p>
+    <h2 id="porque">Porquê a implementação deste portal?</h2>
     <p>A análise de um grande volume de dados através de uma aplicação web coloca grandes desafios em termos da
-        infraestrutura de suporte, de modo a garantir a fiabilidade e rapidez no acesso e visualização da informação.
-        Por outro lado, as necessidades de vizualização e análise a informação variam conforme o contexto geográfico,
-        político e ecológico de cada região. Por essas razões, é difícil implementar num portal glogal como e o
-        GBIF.org, as ferramentas necessárias para as respostas às necessidades específicas de cada país ou região
-    </p>
+          infraestrutura de suporte, de modo a garantir a fiabilidade e rapidez no acesso e visualização da informação.
+          Por outro lado, as necessidades de vizualização e análise a informação variam conforme o contexto geográfico,
+          administrativo, biogeográfio e ecológico de cada região. Por essas razões, é difícil implementar num portal
+      global como é <a href="http://www.gbif.org">GBIF.org</a>, as ferramentas necessárias para as respostas às
+      necessidades específicas de cada país ou região.
+        </p>
     <p>Ao nível nacional, essa implementação é possível, permitindo que as ferramentas para análise da informação
-        sejam mais finas. Assim, o utilizador pode fazer a verificação imediata da disponibilidade e adequabilidade da
-        informação fornecida sem ter necessidade de descarregar os dados e analisá-los localmente.</p>
-    <h2>O que irá ser disponibilizado neste portal?</h2>
-    <p>Neste porta disponibilizam-se os dados publicados através do GBIF, com as seguntes fontes:
-        <ul">
-            <li>Dados publicados por instituições portuguesas</li>
-            <li>Dados publicados por instituições estrangeiras para ao território nacional</li>
-        </ul>
-    </p>
+          sejam mais finas. Assim, o utilizador pode fazer a verificação imediata da disponibilidade e adequabilidade da
+          informação fornecida sem ter necessidade de descarregar os dados e analisá-los localmente.</p>
+    <h2 id="disponibilizado">O que é disponibilizado neste portal?</h2>
+    <p>Neste portal disponibilizam-se os dados publicados através do GBIF, com as seguintes fontes:</p>
+    <ul>
+        <li>Dados publicados por <a href="http://metadados.gbif.pt/collectory">instituições portuguesas</a></li>
+        <li>Dados publicados por <a href="http://metadados.gbif.pt/collectory/public/showDataResource/dr13">instituições estrangeiras</a> para ao território nacional</li>
+    </ul>
     <p>Os dados que serão dispobilizados neste portal, para consulta, análise e descarregamento serão, na medida do
-        possível, iguais aos que são disponibilizados no portal global, GBIF.org. As diferenças que poderão existir
-        resultarão de dois fatores:
-        <ul>
-            <li>Os dados do portal internacional foram atualizados, e ainda não foi possível reproduzir essa
-                atualização no portal nacional</li>
-            <li>Os dados foram processados pelo portal nacional, para fins de indexação, alterando dessa forma
-                os dados</li>
-        </ul>
-    </p>
+         possível, iguais aos que são disponibilizados no portal global, GBIF.org. As diferenças que poderão existir
+          resultarão de dois fatores:</p>
+    <ul>
+      <li>Os dados do portal internacional foram atualizados, e ainda não foi possível reproduzir essa
+            atualização no portal nacional</li>
+      <li>Os dados foram processados pelo portal nacional, para fins de indexação, alterando dessa forma
+            os dados</li>
+    </ul>
     <p>Os dados são, por essa razão, obtidos a partir do portal internacional GBIF.org, e nessa medida, apenas os
-        dados publicados globalmente através do GBIF estarão disponíveis neste portal nacional
+          dados publicados globalmente através do GBIF estarão disponíveis neste portal nacional
     </p>
-    <h2>Como posso publicar os dados da minha instituição através deste portal</h2>
-    <p>Neste portal são disponibilizados os dados mesmos dados (incluindo a versão) que estão disponíveos </p>
-    <h2>Como posso colaborar com o portal</h2>
+    <h2 id="termos">Quais os termos de uso e licença da informação disponibilizada?</h2>
+    <p>Os termos de uso e licença da informação disponibilizada neste portal são os mesmos
+      pelos quais essa informação é disponibilizada no portal internacional do <a href="http://www.gbif.org">GBIF
+        .org. O <a href="http://www.gbif.pt/node/25?language=pt-pt">Acordo de Utilização de Dados</a> define os termos de uso com os quais concorda ao utilizar os
+                   recursos
+        deste portal.</a>. A licença dos dados é definida pelo publicador dos dados, sendo uma destas três
+      possibilidades: <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, <a
+              href="https://creativecommons.org/licenses/by/3.0/">CC-BY</a>, <a
+              href="https://creativecommons.org/licenses/by-nc/3.0/">CC-BY-NC</a> (a versão da licença pode variar,
+      por favor confirme nos metadados do conjunto de dados).
+    </p>
+    <h2 id="como_publicar">Como posso publicar os dados da minha instituição através deste portal?</h2>
+    <p>Todos os dados publicados por instituições portuguesas ficarão acessíveis através deste portal. Por essa
+      razão, a forma de tornar acessíveis os dados da sua instituição através deste portal é publicá-los através
+      do GBIF. Veja mais sobre <a href="http://www.gbif.org/publishing-data/quick-guide">como publicar</a> os dados
+        através do GBIF.</p>
+  <p>É também possível publicar os dados de descrição da sua base de dados ou coleção biológica através deste
+    portal, ainda que os dados não estejam informatizados. O Nó Português mantém acessível o <a href="">Questionário
+    sobre Bases de Dados de Biodiversidade e Colecções Biológicas</a>, que poderá utilizar para preencher os
+    metadados do seu recurso de dados. Estes dados, depois de fornecidos, poderão, se assim o desejar, ser
+    adicionados à lista de coleções ou bases de dados <a href="http://metadados.gbif.pt/collectory/">disponível</a>
+      neste portal.
+  </p>
+  <h2 id="como_colaborar">Como posso colaborar com o portal</h2>
+  <p>É possível colaborar com o GBIF Portugal para o desenvolvimento deste portal de diversas formas:</p>
+
+  <ul>
+    <li>Caso seja programador de software
+      <ul>
+        <li>desenvolvimento de novos módulos</li>
+        <li>adaptação de módulos para o contexto nacional</li>
+        <li>internacionalização e tradução do portal</li>
+        <li>adaptação do design para o layout nacional</li>
+        <li>deteção e correção de erros</li>
+      </ul>
+    </li>
+    <li>Caso não seja programador, pode colaborar com as seguintes tarefas
+      <ul>
+        <li>dar feedback sobre as funcionalidades, qualidade dos dados, etc</li>
+        <li>propor uma nova funcionalidade que responda às suas necessidades</li>
+        <li>escrever documentação ou manuais sobre o uso do portal</li>
+        <li>traduzir documentação existente</li>
+        <li>publicitar o portal</li>
+      </ul>
+    </li>
+  </ul>
+  <p><a href="http://www.gbif.pt/contactos?language=pt-pt">Contate-nos</a> para saber mais sobre como pode colaborar
+    .</p>
+  <h2 id="infraestrutura">Como foi construído este portal?</h2>
+  <p>Este portal implementa vários módulos do Atlas of Living Australia, cujo código fonte está disponível no
+    seguinte repositório: <a href="https://github.com/AtlasOfLivingAustralia">https://github.com/AtlasOfLivingAustralia</a>. As adaptações realizadas estão disponíveis no repositório do GBIF Portugal
+  em <a href="https://github.com/GBIFPortugal">https://github.com/GBIFPortugal</a>. O portal está implementado sobre
+    o serviço de cloud computing na <strong>INCD - Infraestrutura Nacional de Computação Distribuida</strong>, <a
+            href="http://www.incd.pt">www.incd.pt</a>, no âmbito da cooperação entre esta infraestrutura nacional e o
+    <strong>PORBIOTA - E-Infraestrutura Portuguesa de Informação e Investigação em Biodiversidade</strong>. O Portal está
+                 implementado
+    com a seguinte arquitetura:<br>
+  <img src="https://cloud.githubusercontent.com/assets/11174864/19292894/67284f28-9017-11e6-8167-baa6a3b14cf8.png"
+       alt="Arquitetura do Portal de dados de biodiversidade de Portugal" height="50%" width="50%">
+  </p>
+  <h2 id="feedback">Como posso dar feedback?</h2>
+  <p>Se encontrou erros no funcionamento do portal, ou tem sugestões sobre funcionalidades ou melhoramentos, não
+    hesite em contatar-nos. Pode fazê-lo utilizando os seguintes <a
+            href="http://www.gbif.pt/contactos?language=pt-pt">contatos</a>.</p>
+
+  <br><br>
+
+  <p>Data da última atualização: 17-10-2016.</p>
 </section>
-
-
-
-
-  
-
 
 
 <!-- Other data portals -->

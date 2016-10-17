@@ -1,0 +1,46 @@
+.section_about {
+	//margin-top: 40px;
+	width: 100%;
+	background:#FFFFFF;
+	padding: 20px;
+}
+
+.section_about h1{
+    color: #515151;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 24px;
+}
+
+.section_about h2{
+    color: #515151;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 18px;
+    background: none;
+}
+
+.section_about p{
+    color: #515151;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 12px;
+}
+
+.section_about li{
+    color: #515151;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+    font-size: 12px;
+}
+
+.section_about a, .section_about a:visited{
+    color: #007d24;
+}
+
+.section_about a:hover{
+    color: #005418;
+}
+
+
+
+.lowerbar h2{
+    background: none;
+    color: #FFFFFF;
+}
